@@ -1,0 +1,23 @@
+
+
+spherical coordinates:
+	r = radius
+	theta = upward angle	0 degrees = north pole,  180deg=south pole, 90deg = equator
+	psi  = horizonal angle  0 degrees = x-axis  90deg=y-acces
+  so in x,y,z they are:
+	x = r * cos(theta) * cos(psi)
+	y = r * sin(theta) * sin(psi)
+	z = r * cos(theta)
+	r = sqrt(x^2 + y^2 + z^2)
+	theta = arccos(z/r)
+	psi = arctan(y/x)
+-------------
+kerr metric:
+	r(s) = 2GM/c^2
+	a = J/(M*c)
+	sigma = r^2 + a^2 * cos(theta)^2
+	delta = r^2 - r(s)*r + a^2
+
+   time dilation: ZAMO at r   vs stationary at infinity  [ZAMO = zero angular momentum observer]
+	t/Tau = sqrt( [(a^2 + r^2)^2 - a^2 * delta * sin(theta)^2)] / (delta * sigma)  )
+   --> that looks calculatable,  compare to simple time dilation, also can it go negative etc???
